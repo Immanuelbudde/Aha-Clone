@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html{ 
+        background: linear-gradient( black, rgba(255, 89, 0, 1));
+        height: 732px;
+      }
+      img {
+        width: 6%;
+        height: 4%;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+      .parent {
+        width: 450px;
+        height: 500px;
+        padding: 10px;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: rgb(26, 26, 26);
+        border: 0.2px solid gray;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      input {
+        padding: 8px;
+        width: 60%;
+        margin-top: 5px;
+      }
+      a {
+        text-decoration: none;
+        margin-right: 60%;
+        color:white;
+      }
+      button {
+        padding: 10px;
+        width: 80%;
+        margin: 10px;
+        background-color: rgb(255, 89, 0);
+        color: white;
+        border-radius: 50px;
+        border: 2px solid orange;
+        margin-right: 20px;
+        font-size: 20px;
+      }
+      label{
+        color: white;
+      }
+      h1{
+        color: white;
+        font-size: 50px;
+      }
+      input{
+        border: 2px solid orangered;
+        border-radius: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <img src="Assests/Aha-logo.png" alt="" />
+      </div>
+      <div class="parent">
+        <h1>Let's Get <br> Started <span style="color: orangered;">.</span></h1>
+        <label for="">Email or Phone</label>
+        <input type="text" placeholder="Enter your Email or Phone" />
+        <label for="">Password</label>
+        <input type="password" placeholder="Enter your Password" />
+        <br>
+        <a href="">Forgot Password</a>
+        <button type="submit">Sign in</button>
+      </div>
+    </form>
+  </body>
+</html>
