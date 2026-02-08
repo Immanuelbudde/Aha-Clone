@@ -23,10 +23,11 @@
         margin-top: 20px;
       }
       .parent {
-        width: 420px;
-        height: 590px;
+        width: 450px;
+        height: 500px;
         padding: 15px;
         margin: auto;
+        margin-top: 20px;
         border-radius: 10px;
         background-color: rgb(26, 26, 26);
         border: 0.2px solid gray;
@@ -37,28 +38,29 @@
       .parent:hover {
         box-shadow: 2px 3px 10px orange;
       }
+      input {
+        padding: 8px;
+        width: 60%;
+        margin-top: 5px;
+      }
       button a {
         text-decoration: none;
         margin-right: 60%;
-        margin-top: auto;
         color: white;
-      }
-      .forget {
-        color: white;
-        text-decoration: none;
       }
       button {
         padding: 10px;
+        padding-left: 30%;
         width: 80%;
         margin: 10px;
-        background-color: rgb(255, 89, 0);
+        background-color: transparent;
         color: white;
         border-radius: 50px;
         border: 2px solid orange;
         margin-right: 20px;
+        margin-top: 20px;
         font-size: 20px;
         box-shadow: 2px 3px 10px orange;
-        padding-left: 30%;
       }
       label {
         color: white;
@@ -70,21 +72,16 @@
         margin-top: 8px;
         margin-bottom: 8px;
       }
+      label{
+        margin-top: 6px;
+      }
       input {
-        margin-top: 4px;
-        margin-bottom: 8px;
         border: 2px solid orangered;
-        width: 320px;
         border-radius: 10px;
-        padding: 8px;
+        width: 70%;
       }
-      .sign-up{
-        background-color: transparent;
-        border: 2px solid white;
-        padding-left: 30%;
-      }
-      button.sign-up:hover{
-        background-color: orange;
+      button:hover{
+        background-color: orangered;
         border: 2px solid white;
         color: white;
       }
@@ -96,7 +93,8 @@
       }
       .Icons{
         display: flex;
-        padding-left: 23%;
+        padding-left: 25%;
+        gap: 2px;
       }
       i:hover{
         box-shadow: 2px 3px 10px white;
@@ -131,11 +129,9 @@
         <input type="text" placeholder="Enter your Email or Phone" />
         <label for="">Password</label>
         <input type="password" placeholder="Enter your Password" />
-        <br />
-        <a href="" class="forget">Forgot Password</a>
-        <a href="index.html"><button type="submit">Sign in</a></button>
-        <p>--- Sign up ---</p>
-        <a href="Reg.html"><button class="sign-up">Sign up</a></button>
+        <label for="">Confirm Password</label>
+        <input type="password" placeholder="Confirm your Password" />
+        <a href="index.html"><button type="submit">Sign up</a></button>
         <p>--- Or Sign in with ---</p>
         <div class="Icons">
           <a href="https://www.google.com/"><i class="fa-brands fa-google"></a></i>
