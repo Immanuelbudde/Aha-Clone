@@ -13,7 +13,7 @@
     />
     <style>
       html {
-        background-color:#1D1E20;
+        background-color: black;
       }
       img {
         width: 3.5rem;
@@ -43,7 +43,7 @@
         color: white;
         font-weight: 600;
         font-size: 16px;
-        box-shadow: -4px -4px 8px #ff6e2f;
+        box-shadow: 0px 0px 15px #ff6e2f;
       }
       .Nav-buttons {
         display: flex;
@@ -68,13 +68,25 @@
         color: white;
         text-decoration: none;
       }
-      .Aha-interface {
+      .Aha-interface img{
         width: 100%;
         height: 610px;
-        background-image: url("./Assests/Aha-interface.png");
         background-size: cover;
         background-repeat: no-repeat;
-        margin-top: 20px;
+        margin: 0px;
+        margin-top: 0px;
+      }
+      .bg-video{
+        width: 70%;
+        height: 610px;
+      }
+      .left-head{
+        width: 30%;
+        height: 610px;
+        background-color: white;
+      }
+      .banner-parent{
+        display: flex;
       }
     </style>
   </head>
@@ -86,17 +98,31 @@
       <div class="Nav-links">
         <a href="">Home</a>
         <a href="">Movies</a>
-        <a href="">TV Shows</a>
+        <a href="">Shows</a>
         <a href="">Web Series</a>
         <a href="">Channels</a>
         <a href="">Premium</a>
       </div>
       <div class="Nav-buttons">
         <input type="text" placeholder="Search" />
-        <button>Subscribe Now</button>
+        <a href="Subscription.html"><button type="submit">Subscribe Now</button></a>
         <a href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
       </div>
     </div>
-    <div class="Aha-interface"></div>
+    <div class="banner-parent">
+      <div class="left-head">
+    </div>
+    <div class="video">
+      <video autoplay muted loop playsinline class="bg-video">
+      <source src="./Assests/dude-trailler.mp4" type="video/mp4" />
+    </video>
+    </div>
+    </div>
+    <div class="Aha-interface">
+      <img src="./Assests/Aha-interface1.png" alt="">
+    </div>
+    <div class="Aha-interface">
+      <img src="./Assests/Aha-interface2.png" alt="">
+    </div>
   </body>
 </html>
