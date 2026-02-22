@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      html {
+        background-color: black;
+      }
+      .Navbar.main {
+        display: flex;
+      }
+      .Nav-links {
+        margin-top: 25px;
+        margin-left: 50px;
+        display: flex;
+        gap: 30px;
+      }
+      .Nav-logo img {
+        width: 3.8rem;
+        margin: 20px;
+      }
+      .Nav-links a {
+        text-decoration: none;
+        color: #afafaf;
+      }
+      .Nav-search img {
+        color: white;
+        margin-top: 18px;
+        margin-left: 400px;
+      }
+      .Nav-subscription h1 {
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 17px;
+        border-radius: 999px;
+        padding: 10px 20px;
+        background-color: #e85322;
+        box-shadow: -4px 4px 20px orange;
+      }
+      .Nav-user {
+        display: flex;
+        color: #E65122;
+        font-size: 30px;
+        margin-top: 25px;
+        margin-left: 20px;
+      }
+      .Nav-user h6 {
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 15px;
+        color: white;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      h1 {
+        color: white;
+        margin-left: 9rem;
+      }
+      .Nav-right {
+        display: flex;
+        margin-left: auto;
+        margin-right: 30px;
+      }
+      .voch1 {
+        background-image: url(https://www.aha.video/assets/images/utils/card.svg);
+        background-size: cover;
+        height: 260px;
+        width: 415px;
+        margin-left: 9rem;
+      }
+      .voch2 {
+        background-image: url(https://www.aha.video/assets/images/utils/card.svg);
+        background-size: cover;
+        height: 260px;
+        width: 415px;
+        margin-left: 0.3rem;
+      }
+      .voch3 {
+        background-image: url(https://www.aha.video/assets/images/utils/card.svg);
+        background-size: cover;
+        height: 260px;
+        width: 415px;
+        margin-left: 0.3rem;
+      }
+      .vochars-1 {
+        display: flex;
+      }
+      .voch2-1 {
+        background-image: url(https://www.aha.video/assets/images/utils/card.svg);
+        background-size: cover;
+        height: 260px;
+        width: 415px;
+        margin-left: 22rem;
+      }
+      .voch2-2 {
+        background-image: url(https://www.aha.video/assets/images/utils/card.svg);
+        background-size: cover;
+        height: 260px;
+        width: 415px;
+        margin-left: 0.3rem;
+      }
+      .vochars-2 {
+        display: flex;
+        margin-top: 2rem;
+      }
+      .voch1 p {
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0px;
+        width: 115px;
+        height: 18px;
+        padding: 8px;
+        background-color: #B38346;
+        box-shadow: 2px 2px 20px orange;
+        border-radius: 20px;
+      }
+      .voch1 img {
+        margin: 0px 35px 10px;
+      }
+      .voch1 h3 {
+        margin: 0px 30px;
+        color: white;
+      }
+      .voch1-head {
+        display: flex;
+      }
+      .voch1 .voch1-head img {
+        margin: 0px;
+        margin-left: 40%;
+      }
+      #fonts {
+        color: white;
+      }
+      hr {
+        margin-top: 30px;
+        width: 90%;
+      }
+      .price {
+        margin: 20px;
+        margin-left: 30px;
+        color: white;
+      }
+      .voch1-tail {
+        display: flex;
+      }
+      .voch1 h2 {
+        margin: 8px;
+        margin-left: 30px;
+      }
+      .voch1-tail button {
+        width: 35%;
+        height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: white;
+        background-color: #B38346;
+        border: none;
+        margin: 10px 0px 10px 40px;
+      }
+      .voch1-tail button:hover{
+        box-shadow: 0px 0px 15px goldenrod;
+      }
+      .voch2 .voch2-head {
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+      }
+      .voch2 .voch2-mid {
+        margin: 0px 30px;
+      }
+      .voch2 hr {
+        margin-top: 0;
+      }
+      .voch2-tail {
+        display: flex;
+      }
+      .voch2 h2 {
+        margin: 8px;
+        margin-left: 30px;
+      }
+      .voch2-tail button {
+        width: 35%;
+        height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: white;
+        background-color: #E65122;
+        border: none;
+        margin: 10px 0px 10px 40px;
+      }
+      .voch2-tail button:hover{
+        box-shadow: 0px 0px 15px orangered;
+      }
+      .voch3 .voch3-head {
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+      }
+      .voch3 .voch3-mid {
+        margin: 0px 30px;
+      }
+      .voch3 hr {
+        margin-top: 0;
+      }
+      .voch3-tail {
+        display: flex;
+      }
+      .voch3 h2 {
+        margin: 8px;
+        margin-left: 30px;
+      }
+      .voch3-tail button {
+        width: 35%;
+        height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: white;
+        background-color: #E65122;
+        border: none;
+        margin: 10px 10px 10px 40px;
+      }
+      .voch3-tail button:hover{
+        box-shadow: 0px 0px 15px orangered;
+      }
+      .vochars-2 .voch2-1-head .bg-img {
+        background-image: url(https://www.aha.video/savings-tag.8e7bc059604870d1.svg);
+        background-repeat: no-repeat;
+        display: flex;
+        width: 120px;
+      }
+      .vochars-2 .voch2-1-head p {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .vochars-2 .voch2-1-head{
+        display: flex;
+        justify-content: space-between;
+      }
+      .vochars-2 .voch2-1-head .clock{
+        display: flex;
+        margin-right:20px ;
+      }
+      .vochars-2 .voch2-1-head .clock img{
+        width: 15px;
+      }
+      .vochars-2 .voch2-1 .voch2-1-mid {
+        margin: 0px 30px;
+      }
+      .vochars-2 .voch2-1 hr {
+        margin-top: 0;
+      }
+      .voch2-1 h2 {
+        margin: 8px;
+        margin-left: 30px;
+      }
+      .voch2-1-tail {
+        display: flex;
+      }
+      .voch2-1-tail button {
+        width: 35%;
+        height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: white;
+        background-color: #E65122;
+        border: none;
+        margin: 10px 0px 10px 40px;
+      }
+      .voch2-1-tail button:hover{
+        box-shadow: 0px 0px 15px orangered;
+      }
+      .vochars-2 .voch2-2 .bg-img{
+        width: 120px;
+        justify-content: center;
+      }
+      .vochars-2 .voch2-2 .voch2-2-mid {
+        margin: 0px 30px;
+      }
+      .vochars-2 .voch2-2 hr {
+        margin-top: 0;
+      }
+      .voch2-2 h2 {
+        margin: 8px;
+        margin-left: 30px;
+      }
+      .voch2-2-tail {
+        display: flex;
+      }
+      .voch2-2-tail button {
+        width: 35%;
+        height: 50px;
+        font-size: 17px;
+        font-weight: bold;
+        border-radius: 50px;
+        color: white;
+        background-color: #E65122;
+        border: none;
+        margin: 10px 0px 10px 40px;
+      }
+      .voch2-2-tail button:hover{
+        box-shadow: 0px 0px 15px orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Navbar main">
+      <div class="Nav-logo">
+        <img src="./Assests/Aha-logo.png" alt="" />
+      </div>
+      <div class="Nav-links">
+        <a href="">Home</a>
+        <a href="">Movies</a>
+        <a href="">Shows</a>
+        <a href="">Web Series</a>
+        <a href="">Channels</a>
+        <a href="">Premium</a>
+      </div>
+      <div class="Nav-right">
+        <div class="Nav-search">
+          <img src="./Assests/Aha_search.svg" alt="" />
+        </div>
+        <div class="Nav-subscription">
+          <h1>Subscribe Now</h1>
+        </div>
+        <div class="Nav-user">
+          <a href="index.html"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="index.html"><h6>Profile</h6></a>
+        </div>
+      </div>
+    </div>
+    <h1>Choose your Subscription Plan</h1>
+    <div class="vochars-1">
+      <div class="voch1">
+        <div class="voch1-head">
+          <p>RECOMMENDED</p>
+          <img
+            src="https://www.aha.video/clock-icon.d0524a197bf175eb.svg"
+            alt=""
+          />
+          <h4 id="fonts">AD FREE</h4>
+        </div>
+        <img
+          src="https://www.aha.video/aha-gold.98350c613784064a.svg"
+          alt=""
+          width="120rem"
+        />
+        <h3>
+          4K · Dolby Atmos · Ads-Free · Telugu + Tamil Movies & Web series · 1
+          Year
+        </h3>
+        <hr />
+        <div class="voch1-tail">
+          <h2 class="price">INR 999 / year</h2>
+          <a href="Payment.html"><button>Subscribe</a></button>
+        </div>
+      </div>
+      <div class="voch2">
+        <div class="voch2-head">
+          <img
+            src="https://www.aha.video/clock-icon.d0524a197bf175eb.svg"
+            alt=""
+          />
+          <h4 id="fonts">LIMITED ADs</h4>
+        </div>
+        <div class="voch2-mid">
+          <h2 id="fonts">Annual</h2>
+          <h3 id="fonts">
+            Full HD (1080p) · Stereo · Limited Ads · Telugu & Web series · 1
+            Year
+          </h3>
+        </div>
+        <hr />
+        <div class="voch2-tail">
+          <h2 class="price">INR 499 / year</h2>
+          <a href="Payment.html"><button>Subscribe</a></button>
+        </div>
+      </div>
+      <div class="voch3">
+        <div class="voch3-head">
+          <img
+            src="https://www.aha.video/clock-icon.d0524a197bf175eb.svg"
+            alt=""
+          />
+          <h4 id="fonts">ADs</h4>
+        </div>
+        <div class="voch3-mid">
+          <h2 id="fonts">Quarterly Mobile</h2>
+          <h3 id="fonts">
+            HD (720p) · Stream on Mobile only · Autorenew @149 · Stereo · Ads
+          </h3>
+        </div>
+        <hr />
+        <div class="voch3-tail">
+          <h2 class="price">INR 99/ 3months</h2>
+          <a href="Payment.html"><button>Subscribe</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="vochars-2">
+      <div class="voch2-1">
+        <div class="voch2-1-head">
+          <div class="bg-img">
+            <p id="fonts">Begins ₹67/Month</p>
+          </div>
+          <div class="clock">
+            <img
+              src="https://www.aha.video/clock-icon.d0524a197bf175eb.svg"
+              alt=""
+            />
+            <h4 id="fonts">ADs</h4>
+          </div>
+        </div>
+        <div class="voch2-1-mid">
+          <h2 id="fonts">Quarterly</h2>
+          <h3 id="fonts">
+            Full HD (1080p) · Stereo · Ads · Telugu & Tamil Movies & Web series · 3 Months
+          </h3>
+        </div>
+        <hr />
+        <div class="voch2-1-tail">
+          <h2 class="price">INR 99/ 3months</h2>
+          <a href="Payment.html"><button>Subscribe</a></button>
+        </div>
+      </div>
+      <div class="voch2-2">
+        <div class="voch2-1-head">
+          <div class="bg-img">
+            <p id="fonts">No Ads</p>
+          </div>
+          <div class="clock">
+            <img
+              src="https://www.aha.video/clock-icon.d0524a197bf175eb.svg"
+              alt=""
+            />
+            <h4 id="fonts">ADs</h4>
+          </div>
+        </div>
+        <div class="voch2-2-mid">
+          <h2 id="fonts">Annual Premium</h2>
+          <h3 id="fonts">
+            Full HD (1080p) · 5.1 · Ads-Free · Telugu & Tamil Movies & Web series · 1 Year
+          </h3>
+        </div>
+        <hr />
+        <div class="voch2-2-tail">
+          <h2 class="price">INR 699 / year</h2>
+          <a href="Payment.html"><button>Subscribe</a></button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
