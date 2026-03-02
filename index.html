@@ -68,7 +68,7 @@
         color: white;
         text-decoration: none;
       }
-      .Aha-interface img{
+      .Aha-interface img {
         width: 100%;
         height: 610px;
         background-size: cover;
@@ -76,16 +76,23 @@
         margin: 0px;
         margin-top: 0px;
       }
-      .bg-video{
-        width: 70%;
+      video {
+        position: relative;
+        width: 100%;
         height: 610px;
       }
-      .left-head{
-        width: 30%;
-        height: 610px;
-        background-color: white;
+      .left-head img{
+        width: 85%;
+        height: 310px;
+        background-size: 470px;
+        background-repeat: no-repeat;
+        transform: rotate(-10deg);
       }
-      .banner-parent{
+      .left-head-title{
+        text-align: center;
+        color: white;
+      }
+      .banner-parent {
         display: flex;
       }
     </style>
@@ -105,24 +112,34 @@
       </div>
       <div class="Nav-buttons">
         <input type="text" placeholder="Search" />
-        <a href="Subscription.html"><button type="submit">Subscribe Now</button></a>
+        <a href="Subscription.html"
+          ><button type="submit">Subscribe Now</button></a
+        >
         <a href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
       </div>
     </div>
     <div class="banner-parent">
-      <div class="left-head">
-    </div>
-    <div class="video">
-      <video autoplay muted loop playsinline class="bg-video">
-      <source src="./Assests/dude-trailler.mp4" type="video/mp4" />
-    </video>
-    </div>
+      <div class="left-head-main">
+        <div class="left-head">
+          <img src="./Assests/download (1).png" alt="">
+        </div>
+        <div class="left-head-title">
+          <h3>2025 Tamil/Telugu-romantic-comedy</h3>
+          <h4>WRITER & DIRECTOR</h4>
+          <h1>Keerthiswaran</h1>
+        </div>
+      </div>
+      <div class="video">
+        <video autoplay muted loop playsinline class="bg-video">
+          <source src="./Assests/Dude-trailer2.mp4" type="video/mp4" />
+        </video>
+      </div>
     </div>
     <div class="Aha-interface">
-      <img src="./Assests/Aha-interface1.png" alt="">
+      <img src="./Assests/Aha-interface1.png" alt="" />
     </div>
     <div class="Aha-interface">
-      <img src="./Assests/Aha-interface2.png" alt="">
+      <img src="./Assests/Aha-interface2.png" alt="" />
     </div>
   </body>
 </html>
