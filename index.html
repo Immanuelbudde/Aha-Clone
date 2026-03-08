@@ -28,6 +28,14 @@
         display: flex;
         gap: 30px;
       }
+      #sign-in{
+        background-color: rgb(20, 20, 100);
+        border-radius: 20px;
+        height: 40px;
+        width: 100px;
+        box-shadow: 0px 0px 20px rgb(60, 60, 186);
+        padding: 0px 5px;
+      }
       .Nav-links a {
         color: rgb(141, 136, 136);
         font-size: 17px;
@@ -91,9 +99,47 @@
       .left-head-title{
         text-align: center;
         color: white;
+        font-family: Arial, Helvetica, sans-serif;
       }
       .banner-parent {
         display: flex;
+      }
+      .footer{
+        margin: 6% 3%;
+        display: flex;
+      }
+      .footer .footer-socialmedia .grey-logo img{
+        width: 120px;
+        margin: auto;
+      }
+      .footer .footer-socialmedia .footer-media img{
+        width: 35px;
+        margin: auto;
+        padding-right: 8px;
+      }
+      .fonts{
+        color: white;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif
+      }
+      .aha-mobile img{
+        width: 125px;
+        box-shadow: 0px 0px 10px rgb(64, 63, 63);
+        margin: auto;
+      }
+      p{
+        color: gray;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .footer .footer-info .footer-1{
+        margin-left: 30px;
+      }
+      .footer .footer-info{
+        display: flex;
+      }
+      a{
+        font-family: Arial, Helvetica, sans-serif;
       }
     </style>
   </head>
@@ -106,7 +152,7 @@
         <a href="">Home</a>
         <a href="">Movies</a>
         <a href="">Shows</a>
-        <a href="">Web Series</a>
+        <a href="">WebSeries</a>
         <a href="">Channels</a>
         <a href="">Premium</a>
       </div>
@@ -115,7 +161,7 @@
         <a href="Subscription.html"
           ><button type="submit">Subscribe Now</button></a
         >
-        <a href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
+        <a id="sign-in" href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
       </div>
     </div>
     <div class="banner-parent">
@@ -125,7 +171,7 @@
         </div>
         <div class="left-head-title">
           <h3>2025 Tamil/Telugu-romantic-comedy</h3>
-          <h4>WRITER & DIRECTOR</h4>
+          <h4>𝇈 WRITER & DIRECTOR 𝇈</h4>
           <h1>Keerthiswaran</h1>
         </div>
       </div>
@@ -140,6 +186,93 @@
     </div>
     <div class="Aha-interface">
       <img src="./Assests/Aha-interface2.png" alt="" />
+    </div>
+    <div class="footer">
+      <div class="footer-socialmedia">
+        <div class="grey-logo">
+          <img src="https://www.aha.video/aha-gray-logo.29a310bfcc08d0e8.svg" alt="">
+        </div>
+        <h4 class="fonts">Contact with us</h4>
+        <div class="footer-media">
+          <img src="https://www.aha.video/assets/images/social/instagram-footer.png" alt="">
+          <img src="https://www.aha.video/assets/images/social/facebook-footer.svg" alt="">
+          <img src="https://www.aha.video/assets/images/social/twitter-footer.svg" alt="">
+        </div>
+        <h3 class="fonts">Download aha mobile app</h3>
+        <div class="aha-mobile">
+          <img src="https://www.aha.video/assets/images/social/google_play_mobile.svg" alt="">
+          <img src="https://www.aha.video/assets/images/social/app_store_mobile.svg" alt="">
+        </div>
+        <h4 class="fonts">Contact us: <span style="color: #ff6e2f;">support@aha.video</span></h4>
+      </div>
+      <div class="footer-info">
+        <div class="footer-1">
+          <p class="fonts">Popular Movies</p>
+          <p>Hotspot- 2</p>
+          <p>Drive</p>
+          <p>Aadi Shambhala</p>
+          <p>K-Ramp</p>
+          <p>Psych Siddhartha</p>
+          <p>Bomb</p>
+          <p>Phoenix Veezhan</p>
+          <p>Mahasenha</p>
+          <p>Premistunnaa</p>
+          <p>Paanch Minar</p>
+          <p>Ayalaan</p>
+        </div>
+        <div class="footer-1">
+          <p class="fonts">Must Watch Movies</p>
+          <p>Tantra</p>
+          <p>Prasanna Vadanam</p>
+          <p>Balu Gani Talkies</p>
+          <p>Prathinidhi 2</p>
+          <p>Gorre Puranam</p>
+          <p>Sevappi</p>
+          <p>Maruthi Nagar Police Station</p>
+          <p>Rathasaatchi</p>
+          <p>Writer</p>
+          <p>Sila Nerangalil Sila Manidhargal</p>
+          <p>Udanpaal</p>
+        </div>
+        <div class="footer-1">
+          <p class="fonts">Aha Originals</p>
+          <p>Madurai Paiyanum Chennai Ponnum</p>
+          <p>Sshhh</p>
+          <p>SARKAAR</p>
+          <p>3 Roses</p>
+          <p>Chef Mantra</p>
+          <p>Dhoolpet Police Station</p>
+          <p>Arthamainda Arun Kumar</p>
+          <p>Unstoppable</p>
+          <p>Vera Maari Office</p>
+          <p>Ammuchi 2</p>
+        </div>
+        <div class="footer-1">
+          <p class="fonts">Genres</p>
+          <p>Drama</p>
+          <p>Comedy</p>
+          <p>Action</p>
+          <p>Romance</p>
+          <p>Tamil Drama Movies</p>
+          <p>Tamil Action Movies</p>
+          <p>Tamil Comedy Movies</p>
+          <p>Tamil Romance Movies</p>
+          <p>Tamil Crime Movies</p>
+          <p>Tamil Thriller Movies</p>
+          <p>Thriller</p>
+          <p>Tamil Horror Movies</p>
+        </div>
+        <div class="footer-1">
+          <p class="fonts">Learn More</p>
+          <p>View Plans</p>
+          <p>About Us</p>
+          <p>FAQs / Help</p>
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          <p>Grievance Redressal</p>
+          <p>Blog</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
