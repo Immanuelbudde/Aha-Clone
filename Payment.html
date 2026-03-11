@@ -1,117 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body{
-  margin:0;
-  background:#0b0f14;
-  font-family:sans-serif;
-  color:#fff;
-}
-.header{
-  display:flex;
-  justify-content:space-between;
-  padding:20px 40px;
-}
-.wrap{
-  width:950px;
-  margin:40px auto;
-  display:flex;
-  gap:30px;
-}
-.card{
-  flex:1;
-  background:#11161d;
-  border:1px solid #2a2f36;
-  border-radius:14px;
-  padding:20px;
-}
-select,input{
-  width:100%;
-  padding:10px;
-  margin:10px 0;
-  background:#1c232c;
-  border:none;
-  color:#fff;
-  border-radius:6px;
-}
-.row{
-  display:flex;
-  justify-content:space-between;
-  margin:8px 0;
-}
-.upi{
-  background:#1c232c;
-  padding:15px;
-  border-radius:10px;
-  margin-bottom:15px;
-}
-.qr{
-  float:right;
-  background:#ff6a1a;
-  border:none;
-  padding:6px 12px;
-  border-radius:20px;
-  color:#fff;
-}
-.opt{
-  display:block;
-  padding:14px 0;
-  border-top:1px solid #2a2f36;
-  color:#ccc;
-}
-.opt input{margin-right:8px;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />s
+  <title>Document</title>
+  <style>
+    html{
+      background-color: rgb(22, 22, 22);
+    }
+    .nav img{
+      width: 80px;
+      margin: 10px 15px;
+    }
+    .nav #icon {
+      color: white;
+      margin: 10px 18px;
+      text-decoration: none;
+      border: 2px solid skyblue;
+      border-radius: 30px;
+      background-color: rgb(12, 12, 108);
+      padding: 5px 5px;
+      height: 20px;
+    }
+    .nav{
+      display: flex;
+      justify-content: space-between;
+    }
+    .payments-parent{
+      display: flex;
+    }
+    .payment1{
+      border: 1px solid rgb(157, 156, 156);
+      box-shadow: 0px 0px 5px gray;
+      border-radius: 10px;
+      width: 500px;
+      height: 400px;
+      margin: 30px 10px 0px 200px;
+      padding: 0px 20px;
+    }
+    .payment2{
+      border: 1px solid rgb(157, 156, 156);
+      box-shadow: 0px 0px 5px gray;
+      border-radius: 10px;
+      width: 550px;
+      height: 600px;
+      margin: 30px 50px;
+    }
+    .payments-parent .payment1 .payment1-head{
+      display: flex;
+      justify-content: space-between;
+    }
+    #fonts{
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      text-decoration: none;
+    }
+    /* .plan-bar{
+      border: 1px solid white;
+      background-color: rgb(65, 64, 64);
+      width: 98%;
+      height: 50px;
+      border-radius: 10px;
+    } */
+    .plan-bar select{
+      margin: auto;
+      padding: 13.5px 30px;
+      width: 490px;
+      background-color: gray;
+    }
+    .plan-bar option{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 </head>
-
 <body>
+  <div>
+    <div class="nav">
+      <img src="./Assests/Aha-logo.png" alt="">
+      <a id="icon" href="index.html"><i class="fa-solid fa-circle-user"></i>Profile</a>
+    </div>
+    <div class="payments-parent">
+      <div class="payment1">
+        <div class="payment1-head">
+          <h1 id="fonts">Selected plan</h1>
+          <a href="Subscription.html"><h4 id="fonts">Change Plan ></h4></a>
+        </div>
+        <div class="plan-bar">
+          <!-- <h3 id="fonts">Annual</h3> -->
+          <select name="" id="">
+            <option value="" id="fonts">Annual</option>
+            <option value="" id="fonts">Monthly</option>
+          </select>
+        </div>
+      </div>
+      <div class="payment2">
 
-<div class="header">
-  <div class="logo">
-    <img src="https://www.aha.video/assets/images/logo/aha-logo.svg" alt="">
+      </div>
+    </div>
   </div>
-  <div>👤Profile</div>
-</div>
-
-<div class="wrap">
-
-<!-- LEFT -->
-<div class="card">
-  <h3>Selected plan</h3>
-  <select><option>Annual</option></select>
-  <input placeholder="Enter Coupon / Offer code">
-  <div class="row"><span>Plan Charges</span><span>₹499</span></div>
-  <div class="row"><b>You Pay</b><b>₹499</b></div>
-</div>
-
-<!-- RIGHT -->
-<div class="card">
-  <h3>Choose payment method</h3>
-
-  <div class="upi">
-    <label>
-      <input type="radio" name="pay" checked> <b>UPI</b>
-    </label>
-    <button class="qr">Show QR</button>
-    <p style="color:#aaa;font-size:13px">
-      Scan & pay using any UPI app
-    </p>
-  </div>
-
-  <label class="opt">
-    <input type="radio" name="pay"> Credit Card or Debit Card
-  </label>
-
-  <label class="opt">
-    <input type="radio" name="pay"> Wallets
-  </label>
-
-  <label class="opt">
-    <input type="radio" name="pay"> Netbanking
-  </label>
-
-</div>
-
-</div>
 </body>
 </html>
