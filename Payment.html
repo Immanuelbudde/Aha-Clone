@@ -70,9 +70,44 @@
       padding: 13.5px 30px;
       width: 490px;
       background-color: gray;
+      margin-bottom: 20px;
+      box-shadow: 0px 0px 8px gray;
     }
     .plan-bar option{
       font-size: 15px;
+    }
+    .input input{
+      width: 400px;
+      height: 40px;
+      background-color: black;
+      border-radius: 10px;
+      padding: 0px 10px;
+      border: 1px solid grey;
+      color: aliceblue;
+    }
+    .input button{
+      width: 65px;
+      height: 40px;
+      background-color: chocolate;
+      border: none;
+      border-radius: 10px;
+      color: aliceblue;
+      font-size: 15px;
+      font-weight: bold;
+      box-shadow: 0px 0px 8px sandybrown;
+    }
+    .charges{
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+    }
+    .charges h2{
+      padding-top: 20px;
+      margin: auto;
+    }
+    p{
+      color: grey;
+      font-family: Arial, Helvetica, sans-serif;
     }
   </style>
 </head>
@@ -96,9 +131,24 @@
             <option value="">Monthly</option>
           </select>
         </div>
+        <div class="input">
+          <input type="text" placeholder="Enter Coupon / Offer code">
+          <button>Apply</button>
+        </div>
+        <div class="charges">
+          <h2 id="fonts">Plan Charges</h2>
+          <h2 id="fonts"></i>499/-</h2>
+        </div>
+        <hr>
+        <div class="charges">
+          <h2 id="fonts">You Pay</h2>
+          <h2 id="fonts">499/-</h2>
+        </div>
+        <hr>
+        <p>Your plan auto renews until you cancel. By proceeding, I confirm that I am over 18 year, and agree to the Terms of use and Privacy Policy</p>
       </div>
       <div class="payment2">
-
+        
       </div>
     </div>
   </div>
