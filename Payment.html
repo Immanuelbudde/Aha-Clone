@@ -39,14 +39,6 @@
       margin: 30px 10px 0px 200px;
       padding: 0px 20px;
     }
-    .payment2{
-      border: 1px solid rgb(157, 156, 156);
-      box-shadow: 0px 0px 5px gray;
-      border-radius: 10px;
-      width: 550px;
-      height: 600px;
-      margin: 30px 50px;
-    }
     .payments-parent .payment1 .payment1-head{
       display: flex;
       justify-content: space-between;
@@ -54,6 +46,7 @@
     #fonts{
       color: white;
       font-family: Arial, Helvetica, sans-serif;
+      font-weight: 500;
     }
     a{
       text-decoration: none;
@@ -69,7 +62,7 @@
       margin: auto;
       padding: 13.5px 30px;
       width: 490px;
-      background-color: gray;
+      background-color: rgb(75, 74, 74);
       margin-bottom: 20px;
       box-shadow: 0px 0px 8px gray;
     }
@@ -79,7 +72,7 @@
     .input input{
       width: 400px;
       height: 40px;
-      background-color: black;
+      background-color: #292929;
       border-radius: 10px;
       padding: 0px 10px;
       border: 1px solid grey;
@@ -108,6 +101,63 @@
     p{
       color: grey;
       font-family: Arial, Helvetica, sans-serif;
+    }
+    .payment2{
+      border: 1px solid rgb(157, 156, 156);
+      box-shadow: 0px 0px 5px gray;
+      border-radius: 10px;
+      width: 600px;
+      height: 500px;
+      margin: 30px 50px;
+    }
+    .payment2{
+      padding: 0px 20px;
+    }
+    .upi-payment{
+      height: 330px;
+      width: 530px;
+      background-color: #292929;
+      border-radius: 10px;
+      padding: 10px;
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+    .scan-section{
+      display: flex;
+    }
+    .scan-section .QRCode{
+      padding-left: 50px;
+    }
+    .upi-apps{
+      display: flex;
+      gap: 15px;
+    }
+    .upi-numb img{
+      width: 20px;
+      border-radius: 999px;
+      padding: 5px;
+      background-color: white;
+    }
+    .upi-numb input{
+      width: 320px;
+      height: 40px;
+      background-color: #292929;
+      border-radius: 10px;
+      padding: 0px 10px;
+      border: 1px solid grey;
+      color: aliceblue;
+      margin-left: 10px;
+    }
+    .upi-numb button{
+      width: 130px;
+      height: 40px;
+      background-color: #F35F28;
+      border: none;
+      border-radius: 40px;
+      color: aliceblue;
+      font-size: 15px;
+      font-weight: bold;
+      box-shadow: 0px 0px 8px sandybrown;
     }
   </style>
 </head>
@@ -148,7 +198,39 @@
         <p>Your plan auto renews until you cancel. By proceeding, I confirm that I am over 18 year, and agree to the Terms of use and Privacy Policy</p>
       </div>
       <div class="payment2">
-        
+        <div class="payment2-head">
+          <h2 id="fonts">Choose payment method</h2>
+          <div class="upi-payment">
+            <input type="radio">
+            <label id="fonts">UPI</label>
+            <img src="https://aha-web.evergent.com/8cd8e286d9d1c56fe3c25465ab945595.svg" alt="">
+            <br>
+            <span style="color: rgb(254, 177, 10);">Get upto ₹2000 Paytm Vouchers + upto ₹100 Cashback</span>
+            <hr>
+            <div class="scan-section">
+              <h3 id="fonts">
+              <img src="https://aha-web.evergent.com/e400cb7a2dc25f3aa22d42eeee2afa14.svg" alt="">
+              Scan & pay
+            </h3>
+            <img class="QRCode" src="./Assests/QRCode.jpeg" alt="" width="100px">
+            </div>
+            <div class="upi-apps">
+              <img src="https://aha-web.evergent.com/993af26286eed5c59de5062f3c7d4ca4.svg" alt="">
+              <img src="https://aha-web.evergent.com/7b4b8f794f9ff14c903f79abac8eac3f.svg" alt="">
+              <img src="https://aha-web.evergent.com/dc00b59ff5c478efd0006408b451bca6.svg" alt="">
+              <img src="https://aha-web.evergent.com/3b54414c0a62e97a2ce31027dfca2db7.svg" alt="">
+            </div>
+            <p>---------------------------------------------- OR -----------------------------------------------</p>
+            <div class="upi-numb">
+              <p>
+                <img src="https://aha-web.evergent.com/d723b8260aab367d36dad2b8ca1b9946.svg" alt="">
+                Add New UPI ID
+              </p>
+              <input type="text" placeholder="Enter UPI ID">
+              <button>Verify & Pay</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
