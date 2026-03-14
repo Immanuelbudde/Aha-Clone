@@ -21,6 +21,8 @@
       }
       .Navbar.main {
         display: flex;
+        position: relative;
+        z-index: 1;
       }
       .Nav-links {
         margin-top: 25px;
@@ -94,10 +96,30 @@
         /* width: 151px; */
         margin-bottom: 3px;
       }
-      video {
+      .hero-section {
         position: relative;
         width: 100%;
-        height: 610px;
+        min-height: 700px;
+      }
+      .hero-section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%), linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 100%);
+        z-index: 0;
+        pointer-events: none;
+      }
+      .bg-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
       }
       .left-head img{
         width: 85%;
@@ -113,6 +135,9 @@
       }
       .banner-parent {
         display: flex;
+        position: relative;
+        z-index: 1;
+        padding-top: 50px;
       }
       .footer{
         margin: 6% 3%;
@@ -159,41 +184,41 @@
     </style>
   </head>
   <body>
-    <div class="Navbar main">
-      <div>
-        <img src="./Assests/Aha-logo.png" alt="" />
-      </div>
-      <div class="Nav-links">
-        <a href="">Home</a>
-        <a href="">Movies</a>
-        <a href="">Shows</a>
-        <a href="">WebSeries</a>
-        <a href="">Channels</a>
-        <a href="">Premium</a>
-      </div>
-      <div class="Nav-buttons">
-        <input type="text" placeholder="Search" />
-        <a href="Subscription.html"
-          ><button type="submit">Subscribe Now</button></a
-        >
-        <a id="sign-in" href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
-      </div>
-    </div>
-    <div class="banner-parent">
-      <div class="left-head-main">
-        <div class="left-head">
-          <img src="./Assests/download (1).png" alt="">
+    <div class="hero-section">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="./Assests/Dude-trailer2.mp4" type="video/mp4" />
+      </video>
+      <div class="Navbar main">
+        <div>
+          <img src="./Assests/Aha-logo.png" alt="" />
         </div>
-        <div class="left-head-title">
-          <h3>2025 Tamil/Telugu-romantic-comedy</h3>
-          <h4>𝇈 WRITER & DIRECTOR 𝇈</h4>
-          <h1>Keerthiswaran</h1>
+        <div class="Nav-links">
+          <a href="">Home</a>
+          <a href="">Movies</a>
+          <a href="">Shows</a>
+          <a href="">WebSeries</a>
+          <a href="">Channels</a>
+          <a href="">Premium</a>
+        </div>
+        <div class="Nav-buttons">
+          <input type="text" placeholder="Search" />
+          <a href="Subscription.html"
+            ><button type="submit">Subscribe Now</button></a
+          >
+          <a id="sign-in" href="Login.html"><i class="fa-solid fa-user"></i>Sign In</a>
         </div>
       </div>
-      <div class="video">
-        <video autoplay muted loop playsinline class="bg-video">
-          <source src="./Assests/Dude-trailer2.mp4" type="video/mp4" />
-        </video>
+      <div class="banner-parent">
+        <div class="left-head-main">
+          <div class="left-head">
+            <img src="./Assests/download (1).png" alt="">
+          </div>
+          <div class="left-head-title">
+            <h3>2025 Tamil/Telugu-romantic-comedy</h3>
+            <h4>𝇈 WRITER & DIRECTOR 𝇈</h4>
+            <h1>Keerthiswaran</h1>
+          </div>
+        </div>
       </div>
     </div>
     <!-- <div class="Aha-interface">
